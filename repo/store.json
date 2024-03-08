@@ -1,0 +1,35 @@
+{
+  "name": "Burgerstore",
+  "subtitle": "The app store for everything",
+  "description": "Welcome to the Burgerstore for iOS",
+  "iconURL": "https://store.hectabit.org/assets/img/burgerstore.png",
+  "website": "https://store.hectabit.org",
+  "tintColor": "#0096FF",
+  "featuredApps": [
+    "org.hectabit.burgernotes"
+  ],
+  "apps": [
+      {
+          "name": "Burgernotes",
+          "bundleIdentifier": "org.hectabit.burgernotes",
+          "developerName": "HectaBit",
+          "subtitle": "Secure E2E encrypted note-taking app",
+          "iconURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/raw/branch/main/Burgernotes/Assets.xcassets/org.hectabit.burgernotes.imageset/1024x.png",
+          "tintColor": "#FFFFFF",
+          "category": "utilities",
+          "screenshots": [],
+          "versions": [
+            {
+              "version": "b1.0.0",
+              "buildVersion": "1",
+              "date": "2024-02-29",
+              "downloadURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/releases/download/b1.0.0/Burgernotes.ipa",
+              "minOSVersion": "15.0",
+            },
+          ],
+          "appPermissions": {},
+          "patreon": {},
+      },
+  ],
+  "news": [],
+}
