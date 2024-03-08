@@ -64,3 +64,23 @@ img {
     text-decoration: none;
     color: black;
 }
+
+.appcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.burgerbutton {
+    background-color: lightblue;
+    display: flex;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
