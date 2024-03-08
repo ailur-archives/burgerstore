@@ -21,6 +21,7 @@ img {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 5px;
+    overflow-x: scroll;
 }
 
 .burgerbox {
