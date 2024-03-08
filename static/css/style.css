@@ -1,4 +1,4 @@
-@import url("static/fonts/inter.css");
+@import url("/static/fonts/inter.css");
 
 body {
     margin: 0;
@@ -8,6 +8,7 @@ body {
 
 .introductionDiv {
     margin-left: 45px;
+    margin-right: 45px;
     font-size: 18px;
 }
 
@@ -29,12 +30,13 @@ body {
     margin-left: 5px;
     height: calc(100% - 10px);
     border-radius: 12px;
+    background-color: #fff;
 }
 .appGrid .app p {
     position: absolute;
     display: inline;
     font-size: 18px;
-    transform: translate(62.5px,-47.5px);
+    transform: translate(7.5px, 13.5px);
 }
 .appGrid .app .title {
     position: absolute;
@@ -46,13 +48,13 @@ body {
     position: absolute;
     color: white;
     padding: 12px;
-    padding-left: 17.5px;
-    padding-right: 17.5px;
+    padding-left: 22.5px;
+    padding-right: 22.5px;
     background-color: #157efb;
     border: none;
     border-radius: 12px;
     right: 52.5px;
-    transform: translate(0px, -50px);
+    transform: translate(0px, 10px);
 }
 
 

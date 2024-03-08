@@ -13,7 +13,7 @@
           "name": "Burgernotes",
           "bundleIdentifier": "org.hectabit.burgernotes",
           "developerName": "HectaBit",
-          "subtitle": "Secure E2E encrypted note-taking app",
+          "subtitle": "A simple note-taking service!",
           "iconURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/raw/branch/main/Burgernotes/Assets.xcassets/org.hectabit.burgernotes.imageset/1024x.png",
           "tintColor": "#FFFFFF",
           "category": "utilities",
@@ -24,12 +24,33 @@
               "buildVersion": "1",
               "date": "2024-02-29",
               "downloadURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/releases/download/b1.0.0/Burgernotes.ipa",
-              "minOSVersion": "15.0",
-            },
+              "minOSVersion": "15.0"
+            }
           ],
           "appPermissions": {},
-          "patreon": {},
+          "patreon": {}
       },
+      {
+        "name": "Burgertunes",
+        "bundleIdentifier": "lol.cta.burgertunes",
+        "developerName": "cta",
+        "subtitle": "Experimental music player",
+        "iconURL": "https://files.colon3.lol/2Rsu2zfS.burgertunesicon.svg",
+        "tintColor": "#f1b739",
+        "category": "entertainment",
+        "screenshots": [],
+        "versions": [
+          {
+            "version": "b1.0.0",
+            "buildVersion": "1",
+            "date": "2024-02-29",
+            "downloadURL": "https://files.colon3.lol/Zv2L2RKc.burgertunes.ipa",
+            "minOSVersion": "13.4"
+          }
+        ],
+        "appPermissions": {},
+        "patreon": {}
+    }
   ],
-  "news": [],
+  "news": []
 }
