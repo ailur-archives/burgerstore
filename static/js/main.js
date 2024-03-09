@@ -28,7 +28,7 @@ getStore("repo/store.json").then((data) => {
 
         let appInfo = document.createElement("p")
         appInfo.classList.add("w300")
-        appInfo.innerText = application["developerName"] + " | " + application["subtitle"]
+        appInfo.innerText = application["developerName"] + " | " + application["subtitle"] + " | " + application["avaliblePlatforms"]
         appDiv.append(appInfo)
 
         let appButton = document.createElement("button")
