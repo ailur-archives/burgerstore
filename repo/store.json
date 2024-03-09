@@ -2,7 +2,7 @@
   "name": "Burgerstore",
   "subtitle": "The app store for everything",
   "description": "Welcome to the Burgerstore for iOS",
-  "iconURL": "https://store.hectabit.org/assets/img/burgerstore.png",
+  "iconURL": "https://store.hectabit.org/static/img/burgerstore.png",
   "website": "https://store.hectabit.org",
   "tintColor": "#0096FF",
   "featuredApps": [],
@@ -12,11 +12,10 @@
           "bundleIdentifier": "org.hectabit.burgernotes",
           "developerName": "HectaBit",
           "subtitle": "A simple note-taking service!",
-          "iconURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/raw/branch/main/Burgernotes/Assets.xcassets/org.hectabit.burgernotes.imageset/1024x.png",
+          "iconURL": "https://store.hectabit.org/static/img/org.hectabit.burgernotes.png",
           "tintColor": "#FFFFFF",
           "category": "utilities",
           "screenshots": [],
-          "avaliblePlatforms": "iOS, Linux & Web",
           "versions": [
             {
               "version": "b1.0.0",
@@ -24,20 +23,6 @@
               "date": "2024-02-29",
               "downloadURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/releases/download/b1.0.0/Burgernotes.ipa",
               "minOSVersion": "15.0"
-            }
-          ],
-          "versionstore": [
-            {
-              "platform": "web",
-              "version": "1.0.0",
-              "buildVersion": "1",
-              "downloadUrl": "https://notes.hectabit.org"
-            },
-            {
-              "platform": "linux",
-              "version": "1.0.0",
-              "buildVersion": "1",
-              "downloadUrl": "https://dl.flathub.org/repo/appstream/org.hectabit.Burgernotes.flatpakref"
             }
           ],
           "appPermissions": {},
@@ -48,23 +33,44 @@
         "bundleIdentifier": "lol.cta.burgertunes",
         "developerName": "cta",
         "subtitle": "Experimental music player",
-        "iconURL": "https://files.colon3.lol/2Rsu2zfS.burgertunesicon.svg",
+        "iconURL": "https://store.hectabit.org/static/img/lol.cta.burgertunes.png",
         "tintColor": "#f1b739",
         "category": "entertainment",
         "screenshots": [],
-        "avaliblePlatforms": "iOS",
         "versions": [
           {
             "version": "b1.0.0",
             "buildVersion": "1",
-            "date": "2024-02-29",
-            "downloadURL": "https://files.colon3.lol/Zv2L2RKc.burgertunes.ipa",
+            "date": "2024-03-29",
+            "downloadURL": "https://store.hectabit.org/static/ipa/lol.cta.burgertunes-b1.0.0.ipa",
             "minOSVersion": "13.4"
           }
         ],
         "appPermissions": {},
         "patreon": {}
     }
+  ],
+  "linuxapps": [
+      {
+          "name": "Burgernotes",
+          "bundleIdentifier": "org.hectabit.burgernotes",
+          "developerName": "HectaBit",
+          "subtitle": "A simple note-taking service!",
+          "iconURL": "https://store.hectabit.org/static/img/org.hectabit.burgernotes.png",
+          "tintColor": "#FFFFFF",
+          "category": "utilities",
+          "screenshots": [],
+          "versions": [
+            {
+              "version": "1.0.0",
+              "buildVersion": "1",
+              "date": "2024-03-29",
+              "downloadURL": "https://dl.flathub.org/repo/appstream/org.hectabit.Burgernotes.flatpakref"
+            }
+          ],
+          "appPermissions": {},
+          "patreon": {}
+      }
   ],
   "news": []
 }
