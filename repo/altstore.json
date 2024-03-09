@@ -5,7 +5,9 @@
   "iconURL": "https://store.hectabit.org/assets/img/burgerstore.png",
   "website": "https://store.hectabit.org",
   "tintColor": "#0096FF",
-  "featuredApps": [],
+  "featuredApps": [
+    "org.hectabit.burgernotes"
+  ],
   "apps": [
       {
           "name": "Burgernotes",
@@ -16,7 +18,6 @@
           "tintColor": "#FFFFFF",
           "category": "utilities",
           "screenshots": [],
-          "avaliblePlatforms": "iOS, Linux & Web",
           "versions": [
             {
               "version": "b1.0.0",
@@ -24,20 +25,6 @@
               "date": "2024-02-29",
               "downloadURL": "https://centrifuge.hectabit.org/HectaBit/Burgernotes-iOS/releases/download/b1.0.0/Burgernotes.ipa",
               "minOSVersion": "15.0"
-            }
-          ],
-          "versionstore": [
-            {
-              "platform": "web",
-              "version": "1.0.0",
-              "buildVersion": "1",
-              "downloadUrl": "https://notes.hectabit.org"
-            },
-            {
-              "platform": "linux",
-              "version": "1.0.0",
-              "buildVersion": "1",
-              "downloadUrl": "https://dl.flathub.org/repo/appstream/org.hectabit.Burgernotes.flatpakref"
             }
           ],
           "appPermissions": {},
@@ -52,7 +39,6 @@
         "tintColor": "#f1b739",
         "category": "entertainment",
         "screenshots": [],
-        "avaliblePlatforms": "iOS",
         "versions": [
           {
             "version": "b1.0.0",
