@@ -1,4 +1,6 @@
 let appGrid = document.getElementById("appGrid")
+let iOSAppInfo = document.getElementById("iOSAppInfo")
+let unknownAppInfo = document.getElementById("unknownAppInfo")
 
 async function getStore(link) {
     const response = await fetch(link);
@@ -6,34 +8,52 @@ async function getStore(link) {
     return data
 }
 
-getStore("repo/store.json").then((data) => {
-    console.log(data["title"])
-    console.log(data["apps"])
-    for (index in data["apps"]) {
-        let application = data["apps"][index]
+// check if on iOS or iPadOS
+if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
 
-        // UI stuff
-        let appDiv = document.createElement("div")
-        appDiv.classList.add("app")
-        appGrid.append(appDiv)
-
-        let appImage = document.createElement("img")
-        appImage.src = application["iconURL"]
-        appDiv.append(appImage)
-
-        let appTitle = document.createElement("p")
-        appTitle.classList.add("title")
-        appTitle.innerText = application["name"]
-        appDiv.append(appTitle)
-
-        let appInfo = document.createElement("p")
-        appInfo.classList.add("w300")
-        appInfo.innerText = application["developerName"] + " | " + application["subtitle"]
-        appDiv.append(appInfo)
-
-        let appButton = document.createElement("button")
-        appButton.innerText = "Get"
-        appDiv.append(appButton)
+    // get iOS version
+    if (navigator.userAgent.split(" ")[5] == "like") {
+        let iOSVersion = navigator.userAgent.split(" ")[4].replaceAll("_", ".")
+    } else {
+        let iOSVersion = navigator.userAgent.split(" ")[5].replaceAll("_", ".")
     }
-    //console.log(data)
-});
+
+    // show iOS app info
+    iOSAppInfo.classList.remove("hidden")
+    
+    // Load AltStore repository
+    getStore("repo/store.json").then((data) => {
+        console.log(data["title"])
+        console.log(data["apps"])
+        for (index in data["apps"]) {
+            let application = data["apps"][index]
+    
+            // UI stuff
+            let appDiv = document.createElement("div")
+            appDiv.classList.add("app")
+            appGrid.append(appDiv)
+    
+            let appImage = document.createElement("img")
+            appImage.src = application["iconURL"]
+            appDiv.append(appImage)
+    
+            let appTitle = document.createElement("p")
+            appTitle.classList.add("title")
+            appTitle.innerText = application["name"]
+            appDiv.append(appTitle)
+    
+            let appInfo = document.createElement("p")
+            appInfo.classList.add("w300")
+            appInfo.innerText = application["developerName"] + " | " + application["subtitle"]
+            appDiv.append(appInfo)
+    
+            let appButton = document.createElement("button")
+            appButton.innerText = "Get"
+            appDiv.append(appButton)
+        }
+    });
+}
+// Unknown device
+else {
+    unknownAppInfo.classList.remove("hidden")
+}
